@@ -40,10 +40,6 @@ blockquote p {
   margin-bottom: 1em;
 }
 
-a {
-  color: #830242;
-}
-
 .chromeframe {
   margin-top: 10px;
   padding: 10px;
@@ -57,8 +53,11 @@ a {
 }
 
 #logo {
-  padding-top: 1em;
-  padding-bottom: 0em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-family: 'Hanalei', cursive;
+  font-size: 64px;
+  text-shadow: 4px 4px 4px #aaa;
 }
 
 #logo #claim {
@@ -93,10 +92,30 @@ nav ul.nav.nav-tabs li {
   float: right;
 }
 
+nav ul.nav.nav-tabs li a {
+  display:block;
+  color:#e6e0da;
+  background:#6495ED;
+  width:100px;
+  height:35px;
+  line-height:35px;
+  text-align:center;
+}
+
 nav ul.nav.nav-tabs li a.active {
-  color: #000;
-  font-weight: bold;
-  font-family: OpenSansSemibold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display:block;
+  color:#e6e0da;
+  background:#0000CD;
+  width:100px;
+  height:35px;
+  line-height:35px;
+  text-align:center;
+}
+
+nav ul.nav.nav-tabs li:hover {
+  opacity:0.5;
+  filter:alpha(opacity=50);
+  transition:0.8s;
 }
 
 footer {
