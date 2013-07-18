@@ -26,6 +26,7 @@ yepnope({
 
         $('#preloader .txt').html('loading data');
 
+       $("#dailybread").css("display", "none");
        var db = new OpenSpending.DailyBread($('#dailybread'));
        new OpenSpending.Aggregator({
            apiUrl: 'http://openspending.org/api',
@@ -53,6 +54,7 @@ yepnope({
         });
 
         OpenSpending.renderDependentTypes(db);
+        $("#dailybread").fadeIn(1000);
       });
     })(jQuery)
   }

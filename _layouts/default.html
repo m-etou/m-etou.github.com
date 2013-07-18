@@ -22,82 +22,85 @@
   -->
 </head>
 <body>
-  <header>
-    <div class="container">
-      <!--[if lt IE 9]><p class=chromeframe>お使いのウェブヴラウザは古いため，当サイトのコンテンツを正常に表示できません．<br><a href="http://browsehappy.com/">最新のウェブブラウザ</a>で閲覧する事をお勧めします．</p><![endif]-->
-      <div id="logo">
-        <a href="/">
-          WHERE DOES MY MONEY GO?
-        </a>
-      </div>
-      <div >
-      </div>
-      <div id="claim">
-        <a href="/">
-          あなたが日出町に納めた税金がどこで使われているかをお示しします
-        </a>
-      </div>
-      <nav>
-        <ul class="nav nav-tabs">
-          <li><a href="/contact.html">お問い合わせ</a></li>
-          <li><a href="/links.html">関連サイト</a></li>
-          <li><a href="/team.html">開発者</a></li>
-          <li><a href="/sources.html">データの出所</a></li>
-          <li><a href="/about.html">サイトについて</a></li>
-          <li><a href="/bubbletree.html">使途別予算額</a></li>
-          <!--li><a href="bubbletree-map.html">Country &amp; Regional Analysis</a></li-->
-          <li><a href="/">使途一日あたり</a></li>
-        </ul>
-      </nav>
-      <script type="text/javascript">
-        $(function() {
-          var path = window.location.pathname;
-          $('ul.nav-tabs a').each(function(i,el) {
-            if (path == $(el).attr('href')) {
-              $(el).addClass('active');
-            }
-          });
-        });
-      </script>
-    </div>
-  </header>
+  <div id="wrap">
+	  <header>
+	    <div class="container">
+	      <!--[if lt IE 9]><p class=chromeframe>お使いのウェブヴラウザは古いため，当サイトのコンテンツを正常に表示できません．<br><a href="http://browsehappy.com/">最新のウェブブラウザ</a>で閲覧する事をお勧めします．</p><![endif]-->
+	      <div id="logo">
+	        <a href="/">
+	          WHERE DOES MY MONEY GO?
+	        </a>
+	      </div>
+	      <div >
+	      </div>
+	      <div id="claim">
+	        <a href="/">
+	          あなたが日出町に納めた税金がどこで使われているかをお示しします
+	        </a>
+	      </div>
+	      <nav>
+	        <ul class="nav nav-tabs">
+	          <li><a href="/contact.html">お問い合わせ</a></li>
+	          <li><a href="/links.html">関連サイト</a></li>
+	          <li><a href="/team.html">開発者</a></li>
+	          <li><a href="/sources.html">データの出所</a></li>
+	          <li><a href="/about.html">サイトについて</a></li>
+	          <li><a href="/bubbletree.html">使途別予算額</a></li>
+	          <!--li><a href="bubbletree-map.html">Country &amp; Regional Analysis</a></li-->
+	          <li><a href="/">使途一日あたり</a></li>
+	        </ul>
+	      </nav>
+	      <div id="wrap">
+	      <script type="text/javascript">
+	        $(function() {
+	          var path = window.location.pathname;
+	          $('ul.nav-tabs a').each(function(i,el) {
+	            if (path == $(el).attr('href')) {
+	              $(el).addClass('active');
+	            }
+	          });
+	        });
+	      </script>
+	      </div>
+	    </div>
+	  </header>
 
-  <div class="container">
-    {{ content }}
+	  <div class="container">
+	    {{ content }}
+	  </div>
+
+	  <footer>
+	    <div class="inner">
+	      <div class="container">
+	        <p>
+	          Where Does My Money Go? (日本語版 ver.1.0.) は、イギリスの Open Knowledge Foundation が開発した Where Does My Money Go? (英語版) をベースに開発されています。使われているデータは横浜市財政局財政課が作成している平成24年度一般会計予算のデータをもとにしています。Where Does My Money Go? プロジェクトは、公共データのオープン化を進める有志に支えられています。</p>
+
+	        <ul class="footer-links span4 pull-left">
+	          <li><a href="http://wheredoesmymoneygo.org">Where Does My Money Go?</a></li>
+	          <li><a href="http://openspending.org">OpenSpending</a></li>
+	          <li><a href="http://thedatahub.org">TheDataHub</a></li>
+	          <li><a href="http://okfnlabs.org">OKFN Labs</a></li>
+	          <!--li><a href="http://yourtopia.net">YourTopia</a></li-->
+	        </ul>
+	        <ul class="footer-links span4 pull-left">
+	          <li><a href="team.html">Core team</a></li>
+	          <li><a href="sources.html">Data sources</a> used on this site</li>
+	          <!--li><a href="http://openspending.org/help/contact.html">Get in touch</a> and contribute</li-->
+	          <li><a href="https://github.com/orezeni/orezeni.github.com">Code</a> and making your own</li>
+	          <!--li><a href="http://okfn.org/privacy-policy/">Privacy Policy</a></li-->
+	        </ul>
+
+	        All <a href="http://creativecommons.org/licenses/by/3.0/">content</a>,
+	        <a href="http://www.gnu.org/licenses/agpl.html">code</a>
+	        and <a href="http://opendatacommons.org/licenses/odbl/">data</a> is
+	        openly licensed in accordance with the
+	        <a href="http://opendefinition.org/">open definition</a>.
+	        <br/>
+	        <a href="http://opendefinition.org"><img src="http://assets.okfn.org/images/ok_buttons/od_80x15_blue.png" alt="Open Content" /></a>
+	      </div>
+	    </div>
+	  </footer>
   </div>
-
-  <footer>
-    <div class="inner">
-      <div class="container">
-        <p>
-          Where Does My Money Go? (日本語版 ver.1.0.) は、イギリスの Open Knowledge Foundation が開発した Where Does My Money Go? (英語版) をベースに開発されています。使われているデータは横浜市財政局財政課が作成している平成24年度一般会計予算のデータをもとにしています。Where Does My Money Go? プロジェクトは、公共データのオープン化を進める有志に支えられています。</p>
-
-        <ul class="footer-links span4 pull-left">
-          <li><a href="http://wheredoesmymoneygo.org">Where Does My Money Go?</a></li>
-          <li><a href="http://openspending.org">OpenSpending</a></li>
-          <li><a href="http://thedatahub.org">TheDataHub</a></li>
-          <li><a href="http://okfnlabs.org">OKFN Labs</a></li>
-          <!--li><a href="http://yourtopia.net">YourTopia</a></li-->
-        </ul>
-        <ul class="footer-links span4 pull-left">
-          <li><a href="team.html">Core team</a></li>
-          <li><a href="sources.html">Data sources</a> used on this site</li>
-          <!--li><a href="http://openspending.org/help/contact.html">Get in touch</a> and contribute</li-->
-          <li><a href="https://github.com/orezeni/orezeni.github.com">Code</a> and making your own</li>
-          <!--li><a href="http://okfn.org/privacy-policy/">Privacy Policy</a></li-->
-        </ul>
-
-        All <a href="http://creativecommons.org/licenses/by/3.0/">content</a>,
-        <a href="http://www.gnu.org/licenses/agpl.html">code</a>
-        and <a href="http://opendatacommons.org/licenses/odbl/">data</a> is
-        openly licensed in accordance with the
-        <a href="http://opendefinition.org/">open definition</a>.
-        <br/>
-        <a href="http://opendefinition.org"><img src="http://assets.okfn.org/images/ok_buttons/od_80x15_blue.png" alt="Open Content" /></a>
-      </div>
-    </div>
-  </footer>
-
 
   <script>
     var _gaq=[['_setAccount','UA-33045557-1'],['_trackPageview']];
