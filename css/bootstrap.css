@@ -359,6 +359,23 @@ h6 {
 .page-header h1 {
   line-height: 1;
 }
+.midasi{
+  border:solid 1px #ddd;  
+  padding: 5px;  
+  border-radius: 5px;  
+  background: #eee;  
+  -moz-border-radius: 5px; /* FF */ 
+  background: -moz-linear-gradient(top,  #fff,  #eee); /* FF */ 
+  -webkit-border-radius: 5px;/* Webkit */ 
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));/* Webkit */ 
+  -pie-background:linear-gradient(top,  #fff,  #eee); /* ie */ 
+  behavior: url(/img/PIE.htc);  /* ie */ 
+}
+
+.midasi span{
+  border-left:5px #3cf solid;padding-left:10px;
+}
+
 ul, ol {
   padding: 0;
   margin: 0 0 9px 25px;
