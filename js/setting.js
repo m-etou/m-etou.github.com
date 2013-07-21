@@ -10,8 +10,8 @@ Taxes.taxRate = 0.06; // 住民税率
 
 var OpenSpending = OpenSpending || {};
 
-OpenSpending.identifier = 'saiki_budget_2011';
-OpenSpending.year = '2012';
+OpenSpending.identifier = '2011saiki_budget';
+OpenSpending.year = '2011';
 
 OpenSpending.Styles = OpenSpending.Styles || {};
 
