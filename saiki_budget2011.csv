@@ -1,4 +1,4 @@
-﻿UniqueKey,year,category_id,category,subcategory_id,subcategory,project_id,project,amount
+UniqueKey,year,category_id,category,subcategory_id,subcategory,project_id,project,amount
 1,2011,1,健康福祉,1.2,福祉,project_1,老人保健医療費拠出金,5248169
 2,2011,8,政策,8.2,総務,project_2,基金管理費,700305
 3,2011,1,健康福祉,1.2,福祉,project_3,扶助費,1976070555
